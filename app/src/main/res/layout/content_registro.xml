@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.joseluis.agrognome.RegistroActivity"
+    tools:showIn="@layout/activity_registro"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Agrognome"
+        android:id="@+id/textView2"
+        android:textColor="@color/colorBlank"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textSize="32dp" />
+
+    <Button
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:hint="Registrate con Google +"
+        android:textColorHint="@color/colorBlank"
+        android:background="@android:color/holo_red_dark"
+        android:layout_marginTop="15dp" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel"
+        android:gravity="left"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textColor="@color/colorBlank"
+            android:hint="Correo Electronico"
+            android:textColorHint="@color/colorBlank"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="273dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/TextLabel"
+        android:layout_marginTop="25dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="Contraseña"
+            android:textColor="@color/colorBlank"
+            android:textColorHint="@color/colorBlank" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="273dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/TextLabel"
+        android:layout_marginTop="25dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="Confirmar Contraseña"
+            android:textColor="@color/colorBlank"
+            android:textColorHint="@color/colorBlank" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:id="@+id/registrar"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorBlank"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="45dp" />
+
+</LinearLayout>
